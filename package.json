@@ -1,0 +1,51 @@
+{
+  "name": "agreena-recruitment-node",
+  "version": "1.0.0",
+  "description": "Agreena Recruitment Node",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "mocha --require ts-node/register ./src/app/test/*.test.ts",
+    "build": "npx tsc",
+    "start": "npx ts-node src/index.ts",
+    "nodemon": "nodemon --watch src/**/* -e ts,tsx,html,css --exec npx ts-node src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AleksandarDoneski/agreena-recruitment-node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AleksandarDoneski/agreena-recruitment-node/issues"
+  },
+  "homepage": "https://github.com/AleksandarDoneski/agreena-recruitment-node#readme",
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.3",
+    "@types/chai": "^4.3.3",
+    "@types/express": "^4.17.14",
+    "@types/jsonwebtoken": "^8.5.9",
+    "@types/mocha": "^10.0.0",
+    "@types/node": "^18.8.2",
+    "@types/pug": "^2.0.6",
+    "@types/sinon": "^10.0.13",
+    "@types/sqlite3": "^3.1.8",
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
+    "nodemon": "^2.0.20",
+    "sinon": "^14.0.1",
+    "sqlite": "^4.1.2",
+    "sqlite3": "^5.1.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.4",
+    "pug": "^3.0.2",
+    "sequelize": "^6.24.0"
+  }
+}
